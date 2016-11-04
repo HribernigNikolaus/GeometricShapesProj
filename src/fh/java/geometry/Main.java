@@ -29,6 +29,18 @@ public class Main {
 
         printList(shapeList);
 
+        List<Circle> circleList = new ArrayList<>();
+
+        for (GeometricShape shape : shapeList) {
+            if(shape instanceof Circle){
+                circleList.add((Circle)shape);
+            }
+        }
+        System.out.println("----- CIRCLES -----");
+        for (Circle circle : circleList) {
+            System.out.println(circle);
+        }
+
     }
 
 
